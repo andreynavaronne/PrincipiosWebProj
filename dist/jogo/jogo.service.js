@@ -10,7 +10,7 @@ exports.JogoService = void 0;
 const common_1 = require("@nestjs/common");
 let JogoService = class JogoService {
     create(createJogoDto) {
-        return 'This action adds a new jogo';
+        return "This action adds a new jogo";
     }
     findAll() {
         return `This action returns all jogo`;

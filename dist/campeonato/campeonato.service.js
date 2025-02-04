@@ -10,7 +10,7 @@ exports.CampeonatoService = void 0;
 const common_1 = require("@nestjs/common");
 let CampeonatoService = class CampeonatoService {
     create(createCampeonatoDto) {
-        return 'This action adds a new campeonato';
+        return "This action adds a new campeonato";
     }
     findAll() {
         return `This action returns all campeonato`;

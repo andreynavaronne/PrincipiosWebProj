@@ -10,7 +10,7 @@ exports.TabelaService = void 0;
 const common_1 = require("@nestjs/common");
 let TabelaService = class TabelaService {
     create(createTabelaDto) {
-        return 'This action adds a new tabela';
+        return "This action adds a new tabela";
     }
     findAll() {
         return `This action returns all tabela`;

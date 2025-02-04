@@ -52,29 +52,29 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], TabelaController.prototype, "findAll", null);
 __decorate([
-    (0, common_1.Get)(':id'),
-    __param(0, (0, common_1.Param)('id')),
+    (0, common_1.Get)(":id"),
+    __param(0, (0, common_1.Param)("id")),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], TabelaController.prototype, "findOne", null);
 __decorate([
-    (0, common_1.Patch)(':id'),
-    __param(0, (0, common_1.Param)('id')),
+    (0, common_1.Patch)(":id"),
+    __param(0, (0, common_1.Param)("id")),
     __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, update_tabela_dto_1.UpdateTabelaDto]),
     __metadata("design:returntype", void 0)
 ], TabelaController.prototype, "update", null);
 __decorate([
-    (0, common_1.Delete)(':id'),
-    __param(0, (0, common_1.Param)('id')),
+    (0, common_1.Delete)(":id"),
+    __param(0, (0, common_1.Param)("id")),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], TabelaController.prototype, "remove", null);
 exports.TabelaController = TabelaController = __decorate([
-    (0, common_1.Controller)('tabela'),
+    (0, common_1.Controller)("tabela"),
     __metadata("design:paramtypes", [tabela_service_1.TabelaService])
 ], TabelaController);
 //# sourceMappingURL=tabela.controller.js.map

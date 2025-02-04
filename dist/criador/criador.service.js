@@ -10,7 +10,7 @@ exports.CriadorService = void 0;
 const common_1 = require("@nestjs/common");
 let CriadorService = class CriadorService {
     create(createCriadorDto) {
-        return 'This action adds a new criador';
+        return "This action adds a new criador";
     }
     findAll() {
         return `This action returns all criador`;
