@@ -1,11 +1,11 @@
 import { Injectable } from "@nestjs/common";
-import { CreateCampeonatoDto } from "../../campeonato/dto/create-campeonato.dto";
-import { UpdateCampeonatoDto } from "../../campeonato/dto/update-campeonato.dto";
+import { CreateCampeonatoDto } from "../../dto/campeonatoDto/create-campeonato.dto"; // Ensure this path is correct
+import { UpdateCampeonatoDto } from "../../dto/campeonatoDto/update-campeonato.dto"; // Ensure this path is correct
 
 @Injectable()
 export class CampeonatoService {
   create(createCampeonatoDto: CreateCampeonatoDto) {
-    return "This action adds a new campeonato";
+    return `This action adds a new campeonato with the following details: ${JSON.stringify(createCampeonatoDto)}`;
   }
 
   findAll() {
@@ -17,7 +17,7 @@ export class CampeonatoService {
   }
 
   update(id: number, updateCampeonatoDto: UpdateCampeonatoDto) {
-    return `This action updates a #${id} campeonato`;
+    return `This action updates a #${id} campeonato with the following details: ${JSON.stringify(updateCampeonatoDto)}`;
   }
 
   remove(id: number) {

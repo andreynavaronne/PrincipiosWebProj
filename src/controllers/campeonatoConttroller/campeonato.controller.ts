@@ -7,9 +7,9 @@ import {
   Param,
   Delete,
 } from "@nestjs/common";
-import { CampeonatoService } from "../3services/campeonatoService/campeonato.service";
-import { CreateCampeonatoDto } from "./dto/create-campeonato.dto";
-import { UpdateCampeonatoDto } from "./dto/update-campeonato.dto";
+import { CampeonatoService } from "../../services/campeonatoService/campeonato.service";
+import { CreateCampeonatoDto } from "../../dto/campeonatoDto/create-campeonato.dto";
+import { UpdateCampeonatoDto } from "../../dto/campeonatoDto/update-campeonato.dto";
 
 @Controller("campeonato")
 export class CampeonatoController {

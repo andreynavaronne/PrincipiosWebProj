@@ -1,5 +1,5 @@
 import { Module } from "@nestjs/common";
-import { CriadorService } from "./criador.service";
+import { CriadorService } from "../services/criadorService/criador.service";
 import { CriadorController } from "../controllers/criadorController/criador.controller";
 
 @Module({

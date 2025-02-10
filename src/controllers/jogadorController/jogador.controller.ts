@@ -8,8 +8,8 @@ import {
   Delete,
 } from "@nestjs/common";
 import { JogadorService } from "../../services/jogadorService/jogador.service";
-import { CreateJogadorDto } from "../../jogador/dto/create-jogador.dto";
-import { UpdateJogadorDto } from "../../jogador/dto/update-jogador.dto";
+import { CreateJogadorDto } from "../../dto/jogadorDto/create-jogador.dto";
+import { UpdateJogadorDto } from "../../dto/jogadorDto/update-jogador.dto";
 
 @Controller("jogador")
 export class JogadorController {

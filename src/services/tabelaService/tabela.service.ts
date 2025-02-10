@@ -1,11 +1,11 @@
 import { Injectable } from "@nestjs/common";
-import { CreateTabelaDto } from "./dto/create-tabela.dto";
-import { UpdateTabelaDto } from "./dto/update-tabela.dto";
+import { CreateTabelaDto } from "../../dto/tabelaDto/create-tabela.dto";
+import { UpdateTabelaDto } from "../../dto/tabelaDto/update-tabela.dto";
 
 @Injectable()
 export class TabelaService {
   create(createTabelaDto: CreateTabelaDto) {
-    return "This action adds a new tabela";
+    return `This action adds a new tabela with the following details: ${JSON.stringify(createTabelaDto)}`;
   }
 
   findAll() {
@@ -17,7 +17,7 @@ export class TabelaService {
   }
 
   update(id: number, updateTabelaDto: UpdateTabelaDto) {
-    return `This action updates a #${id} tabela`;
+    return `This action updates a #${id} tabela with the following details: ${JSON.stringify(updateTabelaDto)}`;
   }
 
   remove(id: number) {

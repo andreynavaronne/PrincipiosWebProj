@@ -7,9 +7,9 @@ import {
   Param,
   Delete,
 } from "@nestjs/common";
-import { JogoService } from "./jogo.service";
-import { CreateJogoDto } from "../../jogo/dto/create-jogo.dto";
-import { UpdateJogoDto } from "../../jogo/dto/update-jogo.dto";
+import { JogoService } from "../../services/jogoService/jogo.service";
+import { CreateJogoDto } from "../../dto/jogoDto/create-jogo.dto";
+import { UpdateJogoDto } from "../../dto/jogoDto/update-jogo.dto";
 
 @Controller("jogo")
 export class JogoController {

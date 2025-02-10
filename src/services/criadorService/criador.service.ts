@@ -1,11 +1,11 @@
 import { Injectable } from "@nestjs/common";
-import { CreateCriadorDto } from "./dto/create-criador.dto";
-import { UpdateCriadorDto } from "./dto/update-criador.dto";
+import { CreateCriadorDto } from "../../dto/criadorDto/create-criador.dto";
+import { UpdateCriadorDto } from "../../dto/criadorDto/update-criador.dto";
 
 @Injectable()
 export class CriadorService {
   create(createCriadorDto: CreateCriadorDto) {
-    return "This action adds a new criador";
+    return `This action adds a new criador with the following details: ${JSON.stringify(createCriadorDto)}`;
   }
 
   findAll() {
@@ -17,7 +17,7 @@ export class CriadorService {
   }
 
   update(id: number, updateCriadorDto: UpdateCriadorDto) {
-    return `This action updates a #${id} criador`;
+    return `This action updates a #${id} criador with the following details: ${JSON.stringify(updateCriadorDto)}`;
   }
 
   remove(id: number) {

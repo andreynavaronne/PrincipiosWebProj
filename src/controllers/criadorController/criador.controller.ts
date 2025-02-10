@@ -7,9 +7,9 @@ import {
   Param,
   Delete,
 } from "@nestjs/common";
-import { CriadorService } from "./criador.service";
-import { CreateCriadorDto } from "../../criador/dto/create-criador.dto";
-import { UpdateCriadorDto } from "../../criador/dto/update-criador.dto";
+import { CriadorService } from "../../services/criadorService/criador.service";
+import { CreateCriadorDto } from "../../dto/criadorDto/create-criador.dto";
+import { UpdateCriadorDto } from "../../dto/criadorDto/update-criador.dto";
 
 @Controller("criador")
 export class CriadorController {

@@ -7,9 +7,9 @@ import {
   Param,
   Delete,
 } from "@nestjs/common";
-import { TabelaService } from "./tabela.service";
-import { CreateTabelaDto } from "../../tabela/dto/create-tabela.dto";
-import { UpdateTabelaDto } from "../../tabela/dto/update-tabela.dto";
+import { TabelaService } from "../../services/tabelaService/tabela.service";
+import { CreateTabelaDto } from "../../dto/tabelaDto/create-tabela.dto";
+import { UpdateTabelaDto } from "../../dto/tabelaDto/update-tabela.dto";
 
 @Controller("tabela")
 export class TabelaController {
