@@ -7,7 +7,7 @@ import {
   Param,
   Delete,
 } from "@nestjs/common";
-import { TabelaService } from "./tabela.service";
+import { TabelaService } from "./services/tabela.service";
 import { CreateTabelaDto } from "./dto/create-tabela.dto";
 import { UpdateTabelaDto } from "./dto/update-tabela.dto";
 

@@ -7,7 +7,7 @@ import {
   Param,
   Delete,
 } from "@nestjs/common";
-import { CriadorService } from "./criador.service";
+import { CriadorService } from "./services/criador.service";
 import { CreateCriadorDto } from "./dto/create-criador.dto";
 import { UpdateCriadorDto } from "./dto/update-criador.dto";
 

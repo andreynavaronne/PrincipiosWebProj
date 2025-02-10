@@ -7,7 +7,7 @@ import {
   Param,
   Delete,
 } from "@nestjs/common";
-import { CampeonatoService } from "./campeonato.service";
+import { CampeonatoService } from "./services/campeonato.service";
 import { CreateCampeonatoDto } from "./dto/create-campeonato.dto";
 import { UpdateCampeonatoDto } from "./dto/update-campeonato.dto";
 

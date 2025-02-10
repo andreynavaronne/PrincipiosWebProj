@@ -7,7 +7,7 @@ import {
   Param,
   Delete,
 } from "@nestjs/common";
-import { JogoService } from "./jogo.service";
+import { JogoService } from "./services/jogo.service";
 import { CreateJogoDto } from "./dto/create-jogo.dto";
 import { UpdateJogoDto } from "./dto/update-jogo.dto";
 

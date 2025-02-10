@@ -1,6 +1,6 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import { TabelaController } from "./tabela.controller";
-import { TabelaService } from "./tabela.service";
+import { TabelaService } from "./services/tabela.service";
 
 describe("TabelaController", () => {
   let controller: TabelaController;
