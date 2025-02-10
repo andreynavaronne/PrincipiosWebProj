@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common";
 import { CriadorService } from "./criador.service";
-import { CriadorController } from "../4controllers/criadorController/criador.controller";
+import { CriadorController } from "../controllers/criadorController/criador.controller";
 
 @Module({
   controllers: [CriadorController],
