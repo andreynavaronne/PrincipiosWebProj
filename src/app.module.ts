@@ -1,11 +1,11 @@
 import { Module } from "@nestjs/common";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
-import { JogadorModule } from "./models/jogador.module";
-import { TabelaModule } from "./models/tabela.module";
-import { JogoModule } from "./models/jogo.module";
-import { CriadorModule } from "./models/criador.module";
-import { CampeonatoModule } from "./models/campeonato.module";
+import { JogadorModule } from "./repository/jogador.module";
+import { TabelaModule } from "./repository/tabela.module";
+import { JogoModule } from "./repository/jogo.module";
+import { CriadorModule } from "./repository/criador.module";
+import { CampeonatoModule } from "./repository/campeonato.module";
 
 @Module({
   imports: [

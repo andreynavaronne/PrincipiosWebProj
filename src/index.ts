@@ -24,8 +24,11 @@ app.post("/users", async (req, res) => {
   } catch (error) {
     res
       .status(500)
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-      .json({ mesnsage: "Erro ao criar uma usuário", error: error.message });
+
+      .json({
+        mesnsage: "Erro ao criar uma usuário",
+        error: (error as Error).message,
+      });
   }
 });
 
@@ -36,8 +39,11 @@ app.get("/users", async (req, res) => {
   } catch (error) {
     res
       .status(500)
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-      .json({ message: "Erro ao buscar os usuários", error: error.message });
+
+      .json({
+        message: "Erro ao buscar os usuários",
+        error: (error as Error).message,
+      });
   }
 });
 
