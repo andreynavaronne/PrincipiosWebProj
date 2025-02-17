@@ -1,0 +1,9 @@
+import { Module } from "@nestjs/common";
+import { JogoService } from "../services/jogoService/jogo.service";
+import { JogoController } from "../controllers/jogoController/jogo.controller";
+
+@Module({
+  controllers: [JogoController],
+  providers: [JogoService],
+})
+export class JogoModule {}
