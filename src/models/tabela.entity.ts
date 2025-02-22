@@ -1,5 +1,5 @@
 import { Model, DataTypes, Optional } from "sequelize";
-import sequelize from "../config/database";
+import sequelize from "src/config/database";
 import { Campeonato } from "./campeonato.entity";
 import { Jogo } from "./jogo.entity";
 

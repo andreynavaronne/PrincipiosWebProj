@@ -1,5 +1,5 @@
 import { Model, DataTypes, Optional } from "sequelize";
-import sequelize from "../config/database";
+import sequelize from "src/config/database";
 import { Tabela } from "./tabela.entity";
 
 interface JogadorAttributes {
