@@ -17,15 +17,15 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/jest/bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "dev":"ts-node src/index.ts"
+    "dev": "ts-node src/index.ts"
   },
   "engines": {
     "npm": ">=10.0.0",
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@nestjs/common": "^11.0.1",
-    "@nestjs/core": "^11.0.1",
+    "@nestjs/common": "^11.0.10",
+    "@nestjs/core": "^11.0.10",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^11.0.1",
     "dotenv": "^16.4.7",
