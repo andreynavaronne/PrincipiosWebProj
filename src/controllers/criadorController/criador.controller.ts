@@ -10,7 +10,9 @@ import {
 import { CriadorService } from "../../services/criadorService/criador.service";
 import { CreateCriadorDto } from "../../dto/criadorDto/create-criador.dto";
 import { UpdateCriadorDto } from "../../dto/criadorDto/update-criador.dto";
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
+@ApiTags("criador")
 @Controller("criador")
 export class CriadorController {
   constructor(private readonly criadorService: CriadorService) {}

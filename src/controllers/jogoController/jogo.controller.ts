@@ -10,7 +10,9 @@ import {
 import { JogoService } from "../../services/jogoService/jogo.service";
 import { CreateJogoDto } from "../../dto/jogoDto/create-jogo.dto";
 import { UpdateJogoDto } from "../../dto/jogoDto/update-jogo.dto";
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
+@ApiTags("jogo")
 @Controller("jogo")
 export class JogoController {
   constructor(private readonly jogoService: JogoService) {}

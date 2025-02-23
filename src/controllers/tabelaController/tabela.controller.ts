@@ -10,7 +10,9 @@ import {
 import { TabelaService } from "../../services/tabelaService/tabela.service";
 import { CreateTabelaDto } from "../../dto/tabelaDto/create-tabela.dto";
 import { UpdateTabelaDto } from "../../dto/tabelaDto/update-tabela.dto";
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
+@ApiTags("tabela")
 @Controller("tabela")
 export class TabelaController {
   constructor(private readonly tabelaService: TabelaService) {}

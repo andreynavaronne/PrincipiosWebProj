@@ -10,7 +10,9 @@ import {
 import { JogadorService } from "../../services/jogadorService/jogador.service";
 import { CreateJogadorDto } from "../../dto/jogadorDto/create-jogador.dto";
 import { UpdateJogadorDto } from "../../dto/jogadorDto/update-jogador.dto";
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
+@ApiTags("jogador")
 @Controller("jogador")
 export class JogadorController {
   constructor(private readonly jogadorService: JogadorService) {}

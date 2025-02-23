@@ -10,7 +10,9 @@ import {
 import { CampeonatoService } from "../../services/campeonatoService/campeonato.service";
 import { CreateCampeonatoDto } from "../../dto/campeonatoDto/create-campeonato.dto";
 import { UpdateCampeonatoDto } from "../../dto/campeonatoDto/update-campeonato.dto";
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
+@ApiTags("campeonato")
 @Controller("campeonato")
 export class CampeonatoController {
   constructor(private readonly campeonatoService: CampeonatoService) {}
